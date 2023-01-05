@@ -10,12 +10,11 @@
 		fillHtml:function(obj,args){
 			return (function(){
 				obj.empty();
-				//上一页
 				if(args.current > 1){
-					obj.append('<a href="javascript:;" class="prevPage">上一页</a>');
+					obj.append('<a href="javascript:;" class="prevPage">Önceki</a>');
 				}else{
 					obj.remove('.prevPage');
-					obj.append('<span class="disabled">上一页</span>');
+					obj.append('<span class="disabled">Önceki</span>');
 				}
 				//中间页码
 				if(args.current != 1 && args.current >= 4 && args.pageCount != 4){
@@ -65,7 +64,6 @@
 						args.backFn(current);
 					}
 				});
-				//上一页
 				obj.on("click","a.prevPage",function(){
 					var current = parseInt(obj.children("span.current").text());
 					ms.fillHtml(obj,{"current":current-1,"pageCount":args.pageCount});
