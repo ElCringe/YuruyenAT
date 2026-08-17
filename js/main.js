@@ -174,6 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   fetchLiveVideoCount();
+
+  // 8. Dynamic Current Year Auto-updater
+  const currentYearEl = document.getElementById('currentYear');
+  if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear().toString();
+  }
 });
 
 // Keyframe animation for filtering
