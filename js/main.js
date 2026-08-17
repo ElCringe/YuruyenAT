@@ -127,6 +127,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => sectionObserver.observe(section));
   }
+
+  // 7. Dynamic YouTube Video Count Fetcher
+  const updateVideoCountUI = (count) => {
+    const el = document.getElementById('youtubeVideoCount');
+    if (el && count) {
+      el.innerHTML = `${count}<span>+</span>`;
+    }
+  };
+
+  const fetchLiveVideoCount = async () => {
+    const channelId = 'UC_o-GkB55D2sYhAtUGOOnAA';
+    
+    // Check cached value first (valid for 1 hour)
+    const cachedCount = localStorage.getItem('yt_video_count');
+    const cachedTime = localStorage.getItem('yt_count_timestamp');
+    const now = Date.now();
+
+    if (cachedCount && cachedTime && (now - Number(cachedTime) < 3600000)) {
+      updateVideoCountUI(cachedCount);
+      return;
+    }
+
+    const publicApis = [
+      `https://invidious.jing.rocks/api/v1/channels/${channelId}`,
+      `https://inv.tux.pizza/api/v1/channels/${channelId}`,
+      `https://vid.priv.au/api/v1/channels/${channelId}`
+    ];
+
+    for (const api of publicApis) {
+      try {
+        const res = await fetch(api, { signal: AbortSignal.timeout(3000) });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.videoCount) {
+            updateVideoCountUI(data.videoCount);
+            localStorage.setItem('yt_video_count', data.videoCount);
+            localStorage.setItem('yt_count_timestamp', now.toString());
+            break;
+          }
+        }
+      } catch (err) {
+        // Silently continue to next API
+      }
+    }
+  };
+
+  fetchLiveVideoCount();
 });
 
 // Keyframe animation for filtering
