@@ -1,494 +1,842 @@
 <!DOCTYPE html>
-<!-- saved from url=(0067)file:///I:/WEB%20S%C4%B0TE%20%C5%9EABLON/%C3%96rnek%205/index.html# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="tr">
 
-    
-    <meta content="width=device-width,inital-scarel=1" name="viewport">
-    <title>YürüyenAt</title>
-    <link rel="stylesheet" type="text/css" href="./index_files/main.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/media.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/animate.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/font-awesome.min.css">
-    <script type="text/javascript" src="./index_files/jquery-2.2.3.min.js.indir"></script>
-    <script type="text/javascript" src="./index_files/bootstrap.min.js.indir"></script>
-    <script type="text/javascript" src="./index_files/scrolltopcontrol.js.indir"></script>
-    <script type="text/javascript" src="./index_files/main.js.indir"></script>
-    <script type="text/javascript" src="./index_files/wow.min.js.indir"></script>
-    <script type="text/javascript">
-        new WOW().init();
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YürüyenAT Studios — Bağımsız Video & Oyun Arşivi</title>
+  <meta name="description"
+    content="YürüyenAT Studios — Kendi halimizde eğlenirken kaydettiğimiz GTA dublajları, GMod kaosları, Minecraft maceraları ve eski usul oyun videoları arşivi.">
+  <link rel="icon" type="image/png" href="images/news/kanal_logo_beyaz.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme Initialization (Prevents flash of wrong theme) -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+  </script>
 </head>
-	<!--OSMANCIK-->
+
 <body>
-<!----header---->
-<div id="header" class="">
-    <nav  style="background-color:#932426;" role="navigation" class="navbar navbar-style">
-        
-		<div class="container">
-          <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#mb-navbar" class="navbar-toggle"><span class="sr-only">ibaotu navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              <a href="./index.html#" class="navbar-brand">
-                  <img src="./index_files/kanal_logo.png" alt="logo" class="img-responsive logo">
-              </a>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand" aria-label="YürüyenAT Ana Sayfa">
+        <img src="images/news/kanal_logo_beyaz.png" alt="YürüyenAT Logo" class="brand-logo">
+        <span class="brand-text">YÜRÜYEN<span>AT</span></span>
+        <span class="brand-badge">STUDIOS</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#projeler" class="nav-link">Videolar & Seriler</a>
+        <a href="#hikayemiz" class="nav-link">Hikayemiz</a>
+        <a href="#ekip" class="nav-link">Ekip</a>
+        <a href="#topluluk" class="nav-link">Kanal</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Temayı Değiştir" title="Açık/Koyu Tema">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24">
+            <path
+              d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24">
+            <path
+              d="M12.3 2a10 10 0 0 0-.19 20 10.04 10.04 0 0 0 9.8-7.58 1 1 0 0 0-1.25-1.22A8 8 0 1 1 11.58 3.5a1 1 0 0 0-.28-1.5z" />
+          </svg>
+        </button>
+
+        <a href="https://www.youtube.com/@Y%C3%BCr%C3%BCyenAt" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+          <span>YouTube Kanalı</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>2018'den Beri • Mahalle Prodüksiyonu</span>
           </div>
-            <div id="mb-navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="./index.html">Ana Sayfa</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">Hakkımızda</a>
-                    </li>
-                    <li>
-                        <a href="./team.html">YürüyenAt Ekibi</a>
-                    </li>
-                    <li>
-                        <a href="./newslist.html">Haber Ve Etkinliklerimiz</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">İletişim</a>
-                    </li>
-                </ul>
+
+          <h1 class="hero-title">
+            Yürüyen<span>AT</span> Studios
+          </h1>
+
+          <p class="hero-subtitle">
+            Kendi halimizde eğlenirken kayda aldığımız; GTA dublajları, GMod kaosları, Minecraft serüvenleri ve
+            nostaljik oyun videoları arşivi.
+          </p>
+
+          <div class="hero-cta">
+            <a href="https://www.youtube.com/@Y%C3%BCr%C3%BCyenAt" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+              <span>YouTube Kanalına Git</span>
+            </a>
+            <a href="#projeler" class="btn btn-secondary">
+              <span>Videolara Göz At</span>
+              <svg class="btn-icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24">
+                <path d="M12 16l-6-6h12z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Highlights / Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">29<span>+</span></div>
+              <div class="stat-label">Orijinal Video Kaydı</div>
             </div>
+            <div class="stat-item">
+              <div class="stat-number">2018</div>
+              <div class="stat-label">Yılından Beri Aktif</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">%100</div>
+              <div class="stat-label">Kendi Halinde Ortam</div>
+            </div>
+          </div>
         </div>
-    </nav>
-</div>
-<!----banner---->
-<div id="banner">
-    <div id="myCarousel" class="carousel slide">
-        <!-- 轮播（Carousel）指标 -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- 轮播（Carousel）项目 -->
-        <div class="carousel-inner">
-            <div class="item active">
-			  <a href="https://www.youtube.com/Y%C3%BCr%C3%BCyenAT" target="_blank"> 
-                <img src="./index_files/kanal_banner.png" alt="First slide" height="1080">
-					</a>
-            </div>
-            <div class="item">
-			  <a href="https://www.youtube.com/watch?v=nAegttmwMSE" target="_blank">
-                <img src="./index_files/bilinmeyen_logo.png" alt="Second slide">
-				</a>
-            </div>
-            <div class="item">
-			  <a href="https://www.youtube.com/watch?v=jlSaItTx4R0" target="_blank">
-                <img src="./index_files/Cihangir_K_banner.png" alt="Third slide">
-				</a>
-            </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS / VIDEOS SECTION ==================== -->
+    <section class="section" id="projeler">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Canlı YouTube Kataloğu</div>
+          <h2 class="section-title">Neler <span>Çektik?</span></h2>
+          <p class="section-desc">
+            Kanalımızdaki gerçek video kayıtları; dublajlardan GMod gecelerine, Minecraft maceralarından kahkaha dolu
+            Co-op serilerine aradığın tüm videolar burada.
+          </p>
         </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="carousel-control left" href="file:///I:/WEB%20S%C4%B0TE%20%C5%9EABLON/%C3%96rnek%205/index.html#myCarousel" data-slide="prev">
-            <div><i class="fa fa-angle-left"></i></div>
-        </a>
-        <a class="carousel-control right" href="file:///I:/WEB%20S%C4%B0TE%20%C5%9EABLON/%C3%96rnek%205/index.html#myCarousel" data-slide="next">
-            <div><i class="fa fa-angle-right"></i></div>
-        </a>
-    </div>
-</div>
-<!----service---->
-<div id="service">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title">
-                    <div>
-                        <h2>YürüyenAt - Studios</h2>
-                        <p>HER ZAMAN DAHA İLERİ.</p>
-                    </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Hepsi (14)</button>
+          <button class="filter-btn" data-filter="gta">GTA Serisi</button>
+          <button class="filter-btn" data-filter="minecraft">Minecraft</button>
+          <button class="filter-btn" data-filter="gmod">GMod & Korku</button>
+          <button class="filter-btn" data-filter="coop">Co-op & Eğlence</button>
+          <button class="filter-btn" data-filter="csgo">CS:GO & Montaj</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- 1. LIBERTY CITY SOĞUKTUR KUZEN -->
+          <article class="project-card" data-category="gta">
+            <div class="project-thumb">
+              <span class="project-badge">GTA Dublaj</span>
+              <img src="https://img.youtube.com/vi/KlvAOu2SPaA/hqdefault.jpg" alt="LIBERTY CITY SOĞUKTUR KUZEN"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=KlvAOu2SPaA" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Liberty City Soğuktur Kuzen İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
+              </a>
             </div>
+            <div class="project-body">
+              <h3 class="project-title">LIBERTY CITY SOĞUKTUR KUZEN</h3>
+              <p class="project-desc">
+                Aykut ve ekibin efsanevi GTA dublaj serisinin Liberty City sokaklarındaki nostaljik ve kahkaha dolu
+                macerası.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=KlvAOu2SPaA" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. ANADOLU GİZEM AVCILARI AMA GTA 5 -->
+          <article class="project-card" data-category="gta">
+            <div class="project-thumb">
+              <span class="project-badge">GTA 5 Macera</span>
+              <img src="https://img.youtube.com/vi/6nuC9A6FM5A/hqdefault.jpg" alt="ANADOLU GİZEM AVCILARI AMA GTA 5"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=6nuC9A6FM5A" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Anadolu Gizem Avcıları İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ANADOLU GİZEM AVCILARI AMA GTA 5</h3>
+              <p class="project-desc">
+                Aykut ve Buğra'nın GTA 5 evrenindeki saçma sapan şehir efsanelerini ve gizemleri çözmeye çalıştığı
+                efsane anlar.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=6nuC9A6FM5A" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. GTA 5'DE 2PAC'İ ÖLDÜRDÜK.MP4 -->
+          <article class="project-card" data-category="gta">
+            <div class="project-thumb">
+              <span class="project-badge">GTA 5 Kaos</span>
+              <img src="https://img.youtube.com/vi/NCa7UxinJHw/hqdefault.jpg" alt="GTA 5'DE 2PAC'İ ÖLDÜRDÜK"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=NCa7UxinJHw" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="GTA 5 2Pac İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">GTA 5'DE 2PAC'İ ÖLDÜRDÜK.MP4</h3>
+              <p class="project-desc">
+                Los Santos sokaklarında başlayan absürt kovalamaca ve ekibin kontrolü tamamen kaybettiği o unutulmaz
+                kayıt.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=NCa7UxinJHw" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. minecraft_hayatta_kalma_hadisesi -->
+          <article class="project-card" data-category="minecraft">
+            <div class="project-thumb">
+              <span class="project-badge">Minecraft Survival</span>
+              <img src="https://img.youtube.com/vi/Lbsi4auQBrg/hqdefault.jpg" alt="minecraft_hayatta_kalma_hadisesi"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=Lbsi4auQBrg" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Minecraft Hayatta Kalma Hadisesi İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">minecraft_hayatta_kalma_hadisesi</h3>
+              <p class="project-desc">
+                Ekibin sıfırdan başladığı hayatta kalma serüveninde yaşanan talihsizlikler, gece baskınları ve maden
+                maceraları.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=Lbsi4auQBrg" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. minecraft_hayatta_kalma_hadisesi2 -->
+          <article class="project-card" data-category="minecraft">
+            <div class="project-thumb">
+              <span class="project-badge">Minecraft Survival</span>
+              <img src="https://img.youtube.com/vi/JsMPswB65Xg/hqdefault.jpg" alt="minecraft_hayatta_kalma_hadisesi2"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=JsMPswB65Xg" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Minecraft Hayatta Kalma Hadisesi 2 İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">minecraft_hayatta_kalma_hadisesi2</h3>
+              <p class="project-desc">
+                Hayatta kalma hadisesinin ikinci bölümünde maden kazaları, haritada kaybolmalar ve bitmek bilmeyen kaos.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=JsMPswB65Xg" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. GMOD AMA SCARY CO-OP -->
+          <article class="project-card" data-category="gmod">
+            <div class="project-thumb">
+              <span class="project-badge">GMod Korku</span>
+              <img src="https://img.youtube.com/vi/sv6i4wrONuo/hqdefault.jpg" alt="GMOD AMA SCARY CO-OP" loading="lazy">
+              <a href="https://www.youtube.com/watch?v=sv6i4wrONuo" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="GMod Scary Co-op İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">GMOD AMA SCARY CO-OP</h3>
+              <p class="project-desc">
+                Garry's Mod korku haritasında el fenerleriyle yolunu bulmaya çalışan ekibin çığlık ve kahkaha dolu
+                anları.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=sv6i4wrONuo" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. GMOD AMA AŞURE OLUR GİBİ -->
+          <article class="project-card" data-category="gmod">
+            <div class="project-thumb">
+              <span class="project-badge">GMod Sandbox</span>
+              <img src="https://img.youtube.com/vi/wysJQexQhk4/hqdefault.jpg" alt="GMOD AMA AŞURE OLUR GİBİ"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=wysJQexQhk4" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="GMod Aşure Olur Gibi İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">GMOD AMA AŞURE OLUR GİBİ</h3>
+              <p class="project-desc">
+                Herkesin kafasına göre mod yükleyip sunucuyu çökme noktasına getirdiği, tam bir aşureye dönen GMod
+                gecesi.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=wysJQexQhk4" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. LETHAL COMPANY BU KADAR KNK -->
+          <article class="project-card" data-category="coop">
+            <div class="project-thumb">
+              <span class="project-badge">Co-op Korku</span>
+              <img src="https://img.youtube.com/vi/A_hIt49mwJM/hqdefault.jpg" alt="LETHAL COMPANY BU KADAR KNK"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=A_hIt49mwJM" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Lethal Company İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LETHAL COMPANY BU KADAR KNK</h3>
+              <p class="project-desc">
+                Hurda toplayıp kotayı doldurmaya çalışırken yaratıklara tek tek yem olan ekibin hüzünlü ve komik sonu.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=A_hIt49mwJM" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. BİR TAKIM CANAVARLARI KAYIT ALTINA ALIYORUZ -->
+          <article class="project-card" data-category="coop">
+            <div class="project-thumb">
+              <span class="project-badge">Content Warning</span>
+              <img src="https://img.youtube.com/vi/zT4XDf9le-U/hqdefault.jpg"
+                alt="BİR TAKIM CANAVARLARI KAYIT ALTINA ALIYORUZ" loading="lazy">
+              <a href="https://www.youtube.com/watch?v=zT4XDf9le-U" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Content Warning İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BİR TAKIM CANAVARLARI KAYIT ALTINA ALIYORUZ</h3>
+              <p class="project-desc">
+                Yeraltına inip izlenme uğruna canavarların peşinden koşan ekibin hayatta kalma ve video çekme çabası.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=zT4XDf9le-U" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. PACİFY'DE MESİ PORTALI -->
+          <article class="project-card" data-category="coop">
+            <div class="project-thumb">
+              <span class="project-badge">Pacify Korku</span>
+              <img src="https://img.youtube.com/vi/bw_tqWkf43k/hqdefault.jpg" alt="PACİFY'DE MESİ PORTALI"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=bw_tqWkf43k" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Pacify Mesi Portalı İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PACİFY'DE MESİ PORTALI</h3>
+              <p class="project-desc">
+                Korku evinde anahtar ararken bir anda açılan gizemli Messi portalı ve ekibin koptuğu o anlar.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=bw_tqWkf43k" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. 1 GÜNDE ZENGİN OLAMAMAK -->
+          <article class="project-card" data-category="coop">
+            <div class="project-thumb">
+              <span class="project-badge">Co-op Eğlence</span>
+              <img src="https://img.youtube.com/vi/OmzHZ91V-2k/hqdefault.jpg" alt="1 GÜNDE ZENGİN OLAMAMAK"
+                loading="lazy">
+              <a href="https://www.youtube.com/watch?v=OmzHZ91V-2k" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="1 Günde Zengin Olamamak İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">1 GÜNDE ZENGİN OLAMAMAK</h3>
+              <p class="project-desc">
+                Bütün birikimi tek elde sıfırlayan ve zengin olma hayallerini suya düşüren eğlenceli arkadaş kapışması.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=OmzHZ91V-2k" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. SENSİN O KARDEŞİM -->
+          <article class="project-card" data-category="csgo">
+            <div class="project-thumb">
+              <span class="project-badge">CS:GO Montaj</span>
+              <img src="https://img.youtube.com/vi/TyDlHFVs56c/hqdefault.jpg" alt="SENSİN O KARDEŞİM" loading="lazy">
+              <a href="https://www.youtube.com/watch?v=TyDlHFVs56c" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Sensin o Kardeşim İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SENSİN O KARDEŞİM</h3>
+              <p class="project-desc">
+                Eray'ın CS:GO'daki vuruşları, mikrofon kavgaları ve arkaya müzik döşenmiş nostaljik montaj videosu.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=TyDlHFVs56c" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. CSGO AMA YOLDAŞ OLAN -->
+          <article class="project-card" data-category="csgo">
+            <div class="project-thumb">
+              <span class="project-badge">CS:GO Yoldaş</span>
+              <img src="https://img.youtube.com/vi/Y_cdzFOJXlE/hqdefault.jpg" alt="CSGO AMA YOLDAŞ OLAN" loading="lazy">
+              <a href="https://www.youtube.com/watch?v=Y_cdzFOJXlE" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="CSGO Yoldaş İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CSGO AMA YOLDAŞ OLAN</h3>
+              <p class="project-desc">
+                2v2 Yoldaş modunda rütbe kasarken atılan smoke'lar, kaçan vuruşlar ve bitmek bilmeyen muhabbet.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=Y_cdzFOJXlE" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. KARAVANSIZ KALICAZ DİYE ÇOK KORKUYORUM. -->
+          <article class="project-card" data-category="coop">
+            <div class="project-thumb">
+              <span class="project-badge">Co-op Macera</span>
+              <img src="https://img.youtube.com/vi/3CBh6gIB71Y/hqdefault.jpg"
+                alt="KARAVANSIZ KALICAZ DİYE ÇOK KORKUYORUM" loading="lazy">
+              <a href="https://www.youtube.com/watch?v=3CBh6gIB71Y" target="_blank" rel="noopener noreferrer"
+                class="play-overlay" aria-label="Karavansız Kalıcaz İzle">
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">KARAVANSIZ KALICAZ DİYE ÇOK KORKUYORUM.</h3>
+              <p class="project-desc">
+                Hayatta kalma yolculuğunda karavanı kaybetmemek için verilen amansız ve trajikomik mücadele.
+              </p>
+              <div class="project-footer">
+                <a href="https://www.youtube.com/watch?v=3CBh6gIB71Y" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>YouTube'da İzle</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 paddnone">
-                <a href="javascript:;">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="./index_files/icon_pic1.jpg">
-                        </div>
-                        <div class="service-hover">
-                            <img src="./index_files/HD-logo.png">
-                          <h3>Yeni ve devam eden projeler.</h3>
-                            <p>YürüyenAt ekibi,İzleyicilerine</p>
-                            <p> daha iyi hizmet sunmaya </p>
-                            <p>kararlıdır.</p>
-                        </div>
-                    </div>
-                </a>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & BACKSTORY SECTION ==================== -->
+    <section class="section" id="hikayemiz">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Visual / Banner Showcase -->
+          <div class="about-banner-card">
+            <img src="images/news/kanal_banner.png" alt="YürüyenAT Banner" class="about-banner-img" loading="lazy">
+            <div class="about-banner-overlay">
+              <div class="about-banner-title">YürüyenAT Arşivi</div>
+              <div class="about-banner-sub">Bir arkadaş grubu projesinden doğan YouTube hikayesi</div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 paddnone">
-                <a href="javascript:;">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="./index_files/icon_pic2.jpg">
-                        </div>
-                      <div class="service-hover">
-                            <img src="./index_files/news-icon.png">
-                        <h3> 
-                          <ul>
-                            <li></li>
-                          </ul>
-                        Videolar ve Haberler</h3>	
-                            <p>Yeni filmler,Devam Eden 
-                            </p><p>Seriler,ve yeni çıkacak                                                        
-                            </p><p> videolar<!--					                            p-->
-                      </p></div>
-                    </div>
-                </a>
+          </div>
+
+          <!-- Backstory Content -->
+          <div class="story-content">
+            <div class="section-tag">Biz Kimiz?</div>
+            <h2 class="section-title">Kafamıza Göre Çektik, <span>Buralara Geldik</span></h2>
+
+            <p class="story-lead">
+              2015 yılında YouTube serüvenine adım attık, 2017'den itibaren de kesintisiz video üretmeye başladık.
+            </p>
+
+            <p class="story-p">
+              Dört arkadaş başladığımız bu yolculukta zamanla kadromuz genişledi, bazen eksildi ama samimiyetimiz hiç
+              değişmedi. Discord sunucularında sabahlayarak, bol kahkaha eşliğinde kendi kurgularımızı hayata geçirdik.
+              Ne algoritma kaygısı güttük ne de izlenme peşinde koştuk; tamamen keyif aldığımız oyunları ve projeleri
+              kayda aldık.
+            </p>
+
+            <!-- 3 Key Pillars -->
+            <div class="pillars-list">
+              <div class="pillar-item">
+                <div class="pillar-icon">🎬</div>
+                <div>
+                  <h4 class="pillar-title">Oyun İçi Diziler & Filmler</h4>
+                  <p class="pillar-desc">GMod ve Minecraft dünyasında saatlerce sahne hazırlayıp kendi hikayelerimizi
+                    çektik.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">🎙️</div>
+                <div>
+                  <h4 class="pillar-title">Özgün Dublaj & Montaj</h4>
+                  <p class="pillar-desc">Kendi seslendirmelerimiz ve doğal esprilerimizle her videoya özgün bir ruh
+                    kattık.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">🍕</div>
+                <div>
+                  <h4 class="pillar-title">Samimi Arkadaş Ortamı</h4>
+                  <p class="pillar-desc">Birlikte eğlendiğimiz ve güldüğümüz anları ölümsüzleştirmek için kayda bastık.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 paddnone">
-                <a href="javascript:;">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="./index_files/icon_pic1.jpg">
-                        </div>
-                        <div class="service-hover">
-                            <img src="./index_files/case-icon.png">
-                            <h3>           Hizmetler</h3>
-                            <p>Burası Boş koycak bişi bulamadım</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 paddnone">
-                <a href="javascript:;">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="./index_files/icon_pic2.jpg">
-                        </div>
-                        <div class="service-hover">
-                            <img src="./index_files/tel-icon.png">
-                            <h3>Bize Ulaşın</h3>
-                            <p>Video fikirleri,telif hakları</p>
-                            <p>vb şeyler  için,</p>
-                            <p>daha fazla iletişim için lütfen </p>
-                            <p>bizimle iletişime geçin.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </div>
+
         </div>
-    </div>
-</div>
-<!----about---->
-<div id="about">
+      </div>
+    </section>
+
+    <!-- ==================== TEAM SECTION ==================== -->
+    <section class="section" id="ekip">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Bizim Çocuklar</div>
+          <h2 class="section-title">YürüyenAT <span>Tayfası</span></h2>
+          <p class="section-desc">
+            Kamera arkasında, senaryo masasında, kurgu başında ve mikrofonun diğer ucundaki emektarlar.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- 1. Eray (Cihangir K) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/cihangirkfoto.png" alt="Eray - Cihangir K" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Eray</h3>
+            <div class="team-nickname">Cihangir K</div>
+            <span class="team-role">Oyuncu</span>
+            <p class="team-note">Oyun fark etmeksizin her role giren, başrolü zor bırakan adam.</p>
+          </div>
+
+          <!-- 2. Aykut (Aykut Kaya) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/aykutkaya.png" alt="Aykut - Aykut Kaya" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Aykut</h3>
+            <div class="team-nickname">Aykut Kaya</div>
+            <span class="team-role">Editör & Dublaj</span>
+            <p class="team-note">Render başında sabahlayan, unutulmaz repliklerin ve kurgunun mimarı.</p>
+          </div>
+
+          <!-- 3. Taha (Ata Ecnebi) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/ataecnebi.png" alt="Taha - Ata Ecnebi" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Taha</h3>
+            <div class="team-nickname">Ata Ecnebi</div>
+            <span class="team-role">Modcu & Developer</span>
+            <p class="team-note">Harita ve mod dünyasının kurucusu, aynı zamanda bu web sitesini kodlayan kişi.</p>
+          </div>
+
+          <!-- 4. Eren (Dayı) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/komur.png" alt="Eren - Dayı" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Eren</h3>
+            <div class="team-nickname">Dayı</div>
+            <span class="team-role">Emekli</span>
+            <p class="team-note">Kanalın kuruluş günlerinden kalma, köşesinde çayını yudumlayan kıdemli emektar.</p>
+          </div>
+
+          <!-- 5. Buğra (Rus Kötü) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/bura.png" alt="Buğra - Rus Kötü" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Buğra</h3>
+            <div class="team-nickname">Rus Kötü</div>
+            <span class="team-role">Oyuncu</span>
+            <p class="team-note">Özellikle senaryolu dizilerde kötü adam rollerinin bir numaralı ismi.</p>
+          </div>
+
+          <!-- 6. Eren (Peko) -->
+          <div class="team-card">
+            <div class="team-avatar-box">
+              <img src="images/news/peko.png" alt="Eren - Peko" class="team-avatar" loading="lazy">
+            </div>
+            <h3 class="team-name">Eren</h3>
+            <div class="team-nickname">Peko</div>
+            <span class="team-role">Emekli</span>
+            <p class="team-note">Eski videolarda ve projelerde çokça emeği geçen, şimdilerde inzivaya çekilmiş isim.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMMUNITY & SOCIALS BANNER ==================== -->
+    <section class="section" id="topluluk" style="padding-bottom: 40px;">
+      <div class="container">
+        <div class="community-banner">
+          <h2 class="community-title">Kanalda Yerini Al</h2>
+          <p class="community-desc">
+            Eski serileri baştan izlemek, nostalji yapmak ya da yeni projelere göz atmak istersen YouTube kanalımıza
+            bekleriz.
+          </p>
+          <div class="community-links">
+            <a href="https://www.youtube.com/@Y%C3%BCr%C3%BCyenAt" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+              <span>YouTube Kanalına Abone Ol</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="about-text">
-                    <h1>YürüyenAt Ekibi                   </h1>
-                    <h4>Kapsamlı hizmetimiz, uzun yıllara dayanan iş deneyimimiz </h4>
-                    <h4>ve güvenilir bir ekibimiz var.</h4>
-                    <p><font color="#E53935">Filmler&nbsp;&nbsp;&nbsp;&nbsp;Oyun Videoları&nbsp;&nbsp;&nbsp;&nbsp;Diziler&nbsp;&nbsp;</font></p>
-                    <a class="about-btn" href="./about.html">Hakkımızda</a>
-                </div>
-            </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/news/kanal_logo_beyaz.png" alt="YürüyenAT Logo" class="brand-logo"
+            style="height: 32px; width: auto;">
+          <span class="footer-brand-text">
+            YÜRÜYEN<span>AT</span> STUDIOS
+          </span>
         </div>
-    </div>
-</div>
-<!----case---->
-<div id="case">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title">
-                    <div>
-                        <h2>YürüyenAT - <span>Studios</span></h2>
-                        <p>Keşfet</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img1.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: -396px; left: 0px;">
-                        <div class="case-text">
-                            <h2>Bilinmeyen</h2>
-                            <h4>Bir Gmod Dizisi</h4>
-                            <p>Bilinmeyen iki dedektifin vahşi bir cinayeti araştırması ve sonrasında başlarına gelenleri   anlatan küçük bir dizidir.</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=zXABvHpHfU4&list=PLvJzE0a1JFUiLel0zawmy69g5Upd1FMpf" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img2.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: -396px;">
-                        <div class="case-text">
-                            <h2>Varlık</h2>
-                            <h4>Bir Minecraft Filmi</h4>
-                            <p>Köyde rahat bir şekilde yaşayan Eray ve Aykut yeni gelen komşuları yüzünden hayatları bi anda terse dönmüştür</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=EiQDFcvbdJc" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img3.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: -396px;">
-                        <div class="case-text">
-                            <h2>Varlık:Nizar Konağı</h2>
-                            <h4>Bir Minecraft Filmi</h4>
-                            <p>Biraz para kazanmak için terk edilmiş konağın içine izinsiz giren 3 yetişkin başlarına gelceklerinden haberleri yoktu</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=BO-PGzQaOfc&list=PLvJzE0a1JFUhhR5bkn3s-KkXS2XlYfxeq&index=12" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img4.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: -396px;">
-                        <div class="case-text">
-                            <h2>Cihangir K</h2>
-                            <h4>Bir Gta Filmi</h4>
-                            <p>Yetim ve öksüz olan Cihangir küçük yaşlarında yetimhaneden kaçıp hayata tutunmaya çalışmıştır. Fakat 17 yaşında hayatını değiştiren kararı vermiştir</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=jlSaItTx4R0&list=PLvJzE0a1JFUhhR5bkn3s-KkXS2XlYfxeq&index=13" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img5.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: 396px;">
-                        <div class="case-text">
-                            <h2>Vice City Soğuktur Yiğer</h2>
-                            <h4>Gta Vice city türkçe seslendirme</h4>
-                            <p>Aykutun Oynayışı + Türkçe seslendirme = Vice city soğuktur yiğen</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=cDtZmClUdgY&list=PLvJzE0a1JFUhSU2wORpPb-JcWrK7qAFQj" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img6.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: 396px;">
-                        <div class="case-text">
-                            <h2>Fifa 18</h2>
-                            <h4>Fifa 18 Kariyer modu</h4>
-                            <p>Fifa 2018'de Erayın kariyer modunu oynadığı zamanın video'ya alınmış hali</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=sGpOgEK0YB4&list=PLvJzE0a1JFUjlmffWz8HjwNJjNqJd2C-m" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img7.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: -396px; left: 0px;">
-                        <div class="case-text">
-                            <h2>Sensin o Kardeşim</h2>
-                            <h4>Csgo Montaj</h4>
-                            <p>Eray csgo oynarken video'ya kaydedip montaj yapmıştır</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=TyDlHFVs56c" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 paddnone">
-                <div class="case-item" style="overflow: hidden; position: relative;">
-                    <div class="case-img">
-                        <img src="./index_files/case-img8.jpg">
-                    </div>
-                    <div class="case-hover" style="position: absolute; top: 0px; left: 396px;">
-                        <div class="case-text">
-                            <h2>Anadolu gizem avcıları</h2>
-                            <h4>Gta 5 te takılmaca</h4>
-                            <p>Aykut ve Buğra Gta 5'de takılırkenki hallerini video'ya almıştır</p>
-                            <a class="case-more" href="https://www.youtube.com/watch?v=6nuC9A6FM5A" target="_blank" >İzle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!----culture---->
-<div id="culture">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title">
-                    <div>
-                        <h2>YürüyenAT - <span>Studios</span></h2>
-                        <p>Çevrimiçi proje gösterimi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="culture">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="culture-left">
-                        <div class="culture-text">
-                           <font color="white"> <h2>Ata Ecnebi</h2>
-                            <p>Senaryosu yapım aşamasında olan "Ata Ecnebi"</p>
-							<p>yakın zamanda çekimlere başlanıcaktır</p></font>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-sm-5 col-xs-12">
-                    <div class="culture-right">
-                        <div class="culture-text">
-                            <h2>Kanalın amacı</h2>
-                            <span>Kanalı kurmamızın asıl nedeni</span>
-                            <p>
-                                Kendi çapımızda eğlenirken
-								</p>
-							<p>
-								video'ya almamız
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!----footer---->
-<div id="footer" style="background-color:#932426;" >
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 col-sm-7">
-                <div class="footer-text">
-                    <h4>İletişim Bilgileri</h4>
-                    <ul>
-                        <li><img src="./index_files/mapicon.png">Lokasyon：Türkiye</li>
-                        <li><img src="./index_files/teliocn.png">Telefon numarsı：0555-88888888</li>
-                        <li><img src="./index_files/emailicon.png">E-Posta：YürüyenAt@boş.com</li>
-                        <li><img src="./index_files/websiteicon.png">URL：www.YürüyenAt.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-5">
-                <div class="footer-erwei">
-                    <div>
-                         <a href="https://www.youtube.com/YürüyenAT" class="thumbnail" target="_blank">
-                            <img src="./index_files/erweima2.jpg">
-                        </a>
-                        <p>YürüyenAT Youtube</p>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/YürüyenAT" class="thumbnail" target="_blank">
-                            <img src="./index_files/erweima2.jpg">
-                        </a>
-                        <p>YürüyenAt Youtube </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="copyright"  style="background-color: #932426;" >
-    <p><span>Kullanım Şartları</span>Copyright©2022　YürüyenAt Studios　Her hakkı saklıdır　Türkiye No:38000</p>
-</div>
-<script type="text/javascript">
-    //case
-    (function ($) {
-        $.fn.extend({
-            show: function (div) {
-                var w = this.width(),
-                    h = this.height(),
-                    xpos = w / 2,
-                    ypos = h / 2,
-                    eventType = "",
-                    direct = "";
-                this.css({"overflow": "hidden", "position": "relative"});
-                div.css({"position": "absolute", "top": this.width()});
-                this.on("mouseenter mouseleave", function (e) {
-                    var oe = e || event;
-                    var x = oe.offsetX;
-                    var y = oe.offsetY;
-                    var angle = Math.atan((x - xpos) / (y - ypos)) * 180 / Math.PI;
-                    if (angle > -45 && angle < 45 && y > ypos) {
-                        direct = "down";
-                    }
-                    if (angle > -45 && angle < 45 && y < ypos) {
-                        direct = "up";
-                    }
-                    if (((angle > -90 && angle < -45) || (angle > 45 && angle < 90)) && x > xpos) {
-                        direct = "right";
-                    }
-                    if (((angle > -90 && angle < -45) || (angle > 45 && angle < 90)) && x < xpos) {
-                        direct = "left";
-                    }
-                    move(e.type, direct)
-                });
 
-                function move(eventType, direct) {
-                    if (eventType == "mouseenter") {
-                        switch (direct) {
-                            case "down":
-                                div.css({"left": "0px", "top": h}).stop(true, true).animate({"top": "0px"}, "fast");
-                                break;
-                            case "up":
-                                div.css({"left": "0px", "top": -h}).stop(true, true).animate({"top": "0px"}, "fast");
-                                break;
-                            case "right":
-                                div.css({"left": w, "top": "0px"}).stop(true, true).animate({"left": "0px"}, "fast");
-                                break;
-                            case "left":
-                                div.css({"left": -w, "top": "0px"}).stop(true, true).animate({"left": "0px"}, "fast");
-                                break;
-                        }
-                    } else {
-                        switch (direct) {
-                            case "down":
-                                div.stop(true, true).animate({"top": h}, "fast");
-                                break;
-                            case "up":
-                                div.stop(true, true).animate({"top": -h}, "fast");
-                                break;
-                            case "right":
-                                div.stop(true, true).animate({"left": w}, "fast");
-                                break;
-                            case "left":
-                                div.stop(true, true).animate({"left": -w}, "fast");
-                                break;
-                        }
-                    }
-                }
-            }
-        });
-    })(jQuery)
-    /*
-    *使用说明：
-    *		$(".a").show($(".b"))
-    *		a是展示层，b是遮罩层
-    *		b在a的内部
-    */
+        <nav class="footer-nav">
+          <a href="#projeler" class="footer-nav-link">Videolar</a>
+          <a href="#hikayemiz" class="footer-nav-link">Hikayemiz</a>
+          <a href="#ekip" class="footer-nav-link">Ekip</a>
+          <a href="https://www.youtube.com/@Y%C3%BCr%C3%BCyenAt" target="_blank" rel="noopener noreferrer"
+            class="footer-nav-link accent">YouTube</a>
+        </nav>
+      </div>
 
-    $(".case-item").each(function (i) {
-        $(this).show($(".case-hover").eq(i));
-    });
-</script>
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; 2018–2026 YürüyenAT Studios.</span>
+        </div>
+        <div class="footer-slogan">
+          "Telif hakkı yok, ne telifi oğlumm."
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button id="backToTop" class="back-to-top" aria-label="Yukarı Çık">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h5v8h6v-8h5z" />
+    </svg>
+  </button>
 
-<div id="topcontrol" title="返回顶部" style="position: fixed; bottom: 80px; right: 30px; opacity: 0; cursor: pointer;"><img src="./index_files/topback.gif" style="width:54px; height:54px; border:0;"></div></body></html>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
